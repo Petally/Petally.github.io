@@ -3,9 +3,13 @@ body {
     background-repeat: repeat;
 }
 
+h {
+    color: white;
+}
+
 p {
     font-style: italic;
-    
+    color: white;
    
 }
 
