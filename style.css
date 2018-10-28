@@ -30,6 +30,6 @@ p {
 
 a { 
     font-family: verdana;
-    text-align: center;
     font-size: large;
 }
+#GithubLink {display:block;text-align:center}
