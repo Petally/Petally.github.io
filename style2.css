@@ -18,3 +18,23 @@ p {
     color: white;
     font-size: 30px;
 }
+a { 
+    font-family: verdana;
+    font-size: xx-large;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: dimgrey;
+}
+
+a:active {
+    color: slateblue;
+}
