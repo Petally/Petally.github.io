@@ -1,0 +1,66 @@
+body {
+background-image: url('images/background1.png');
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+.version-one {
+    color: white;
+    font-family: verdana;
+    text-align: center;
+    font-size: xx-large;
+    border: 12px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(73, 93, 94, 0.5);
+
+}
+
+p {
+    color: white;
+    font-family: verdana;
+    font-size: 18px;
+    border: 12px solid black;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: rgba(73, 93, 94, 0.5);
+}
+
+.version-two {
+    color: white;
+    font-family: verdana;
+    text-align: center;
+}
+
+a { 
+    font-family: verdana;
+    font-size: large;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: dimgrey;
+}
+
+a:active {
+    color: slateblue;
+}
+
+h1 { 
+    color: white;
+    font-family: verdana;
+    font-size: 32px;
+}
+
+.backArrow {
+    color: white;
+    font-size: 30px;
+}
