@@ -9,6 +9,9 @@ background-repeat: no-repeat;
     color: white;
     font-family: verdana;
     text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: #e6e6e6
 
 }
 
