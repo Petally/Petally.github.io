@@ -2,7 +2,7 @@ body {
     background-color: black;
 }
 
-h1 {
+.version-one {
     color: white;
     font-family: verdana;
     text-align: center;
@@ -15,7 +15,8 @@ p {
     
 }
 
-h1 {
-  color: white;
+.version-two {
+  color: pink;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
+  text-align: left;
 }
