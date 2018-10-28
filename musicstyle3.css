@@ -1,0 +1,50 @@
+body {
+background-image: url('images/background1.png');
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+.version-one {
+    color: white;
+    font-family: verdana;
+    text-align: center;
+    border: 12px solid black;
+    border-radius: 30px;
+    background-color: rgba(73, 93, 94, 0.5);
+
+}
+
+p {
+    color: white;
+    font-family: verdana;
+    font-size: 18px;
+    
+}
+
+.version-two {
+    color: white;
+    font-family: verdana;
+    text-align: center;
+}
+
+a { 
+    font-family: verdana;
+    font-size: xx-large;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: dimgrey;
+}
+
+a:active {
+    color: slateblue;
+}
