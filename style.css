@@ -20,3 +20,13 @@ p {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   text-align: left;
 }
+
+a {
+    left: -100;
+    line-height: 200px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
