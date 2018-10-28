@@ -54,3 +54,8 @@ h1 {
     font-family: verdana;
     font-size: 32px;
 }
+
+.backArrow {
+    color: white;
+    font-size: 30px;
+}
