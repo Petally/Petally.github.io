@@ -30,7 +30,7 @@ p {
 
 a { 
     font-family: verdana;
-    font-size: x-large;
+    font-size: large;
 }
 
 a:link {
@@ -48,3 +48,8 @@ a:hover {
 a:active {
     color: slateblue;
 }
+
+h1 { 
+    color: white;
+    font-family: verdana;
+    font-size: 32px;
