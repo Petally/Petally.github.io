@@ -30,6 +30,24 @@ p {
 
 a { 
     font-family: verdana;
-    font-size: large;
+    font-size: xx-large;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: dimgrey;
+}
+
+a:active {
+    color: slateblue;
 }
 #GithubLink {display:block;text-align:center}
+#ShrineLink {display:block;text-align:center}
+
