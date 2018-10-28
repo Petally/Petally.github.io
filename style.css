@@ -9,6 +9,11 @@ background-repeat: no-repeat;
     color: white;
     font-family: verdana;
     text-align: center;
+    background-color: rgba(146, 138, 138, 0.4); 
+    width: 300px;
+    border: 25px solid black;
+    padding: 25px;
+    margin: 25px;
 }
 
 p {
