@@ -1,5 +1,7 @@
 body {
-background: url(background1.png) 75px 50% no-repeat; 
+background-image: url('background.png');
+background-size: cover;
+background-repeat: no-repeat;
 
 }
 
