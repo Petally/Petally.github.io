@@ -1,1 +1,21 @@
-font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-family: verdana;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1 {
+  
+  color: white;
+ 
+}
