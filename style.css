@@ -1,8 +1,6 @@
 body {
-background-image: none;
 background-image: url("background1.png");
-
-background-image: inherit;
+background-color: #cccccc;
 }
 
 .version-one {
