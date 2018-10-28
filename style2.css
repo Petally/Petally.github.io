@@ -3,7 +3,7 @@ body {
     background-repeat: repeat;
 }
 
-h1 {
+.version-one {
     font-style: italic;
     color: white;
 }
