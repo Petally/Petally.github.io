@@ -61,7 +61,7 @@ h1 {
 }
 
 
-#ForwardArrowboi {display:block;text-align:center}
-#BackArrowboi {display:block;text-align:center}
+#ForwardArrowboi {display:block;text-align:right}
+#BackArrowboi {display:block;text-align:left}
 #BackTo {display:block;text-align:center}
 
