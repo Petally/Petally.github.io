@@ -60,7 +60,19 @@ h1 {
     font-size: 32px;
 }
 
+
+#forwardArrowboi {display:block;text-align:right}
+#backArrowboi {display:block;text-align:left}
+#backTo {display:block;text-align:center}
+
+.petalWebsite {
+   font-size: 26px;
+}
+
 .backArrow {
-    color: white;
-    font-size: 30px;
+   font-size: 15px
+}
+
+.forwardArrow {
+   font-size: 15px
 }
