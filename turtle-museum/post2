@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="icon" href="images/icon.png"></link>   
+      <title>	
+      Petally
+      </title>      
+      <meta name="description" content="Petally's Music." 
+      <meta name="author" content="Petally" />
+      <link rel="stylesheet" href="post1style.css"></link>
+   </head>
+   <body>
+
+      
+      <h1 class="version-one">Cute Selfie Turtle</h1>
+      <br>
+      <a href="http://pinhole.me" style="text-decoration:none" class="petalWebsite">Back to Petally's Website.</a>
+      <br>
+      <br>
+      <a href="http://pinhole.me/turtle-museum/post1.html" style="text-decoration:none" class="backArrow">&lt;&asymp;</a>
+      <a href="http://pinhole.me/turtle-museum/post2.html" style="text-decoration:none" class="forwardArrow">&gt;&asymp;</a>
+      <br>
+      <a href="https://i.imgur.com/3TbpigZ.png" style="text-decoration:none" class="backArrow">Link to the turtle.</a>
+      <br><p>This turtle is awesome, because he has access to modern technology,
+      <br>and he is super cool, taking a selfie like this underwater.<br>
+      He is just being a chillax dude right now underwater. His face: 3:</p>
+    </body>
