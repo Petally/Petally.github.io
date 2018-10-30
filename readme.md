@@ -1,10 +1,7 @@
-To do:
+Changelog:
 
+Added Sidebar to Turtle Blog.
 
-Actually position "Petally's Website" horizontally in the center. Check!
+New Turtle Post.
 
-Position everything under "Petally's Website". Check!
-
-Fix cult music. Check!
-
-Style links. Check!
+Fixed minor things.
