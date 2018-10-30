@@ -65,7 +65,7 @@ ul {
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #2FAAD4;
+    background-color: #3994B3;
     border-radius: 10px;
     border: 10px solid black;
 }
@@ -76,7 +76,7 @@ li a {
     padding: 16px 32px;
     text-decoration: none;
     font-family: verdana;
-    font-size: small;
+    font-size: medium;
 }
 
 
