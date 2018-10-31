@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="icon" href="images/icon.png"></link>   
+      <title>	
+      More Flash, Less ads
+      </title>      
+      <meta name="description" content="Games" 
+      <meta name="author" content="Petally" />
+      <link rel="stylesheet" href="style.css"></link>
+   </head>
+   <body>
+
+      <h1 class="version-one">Petally's Website.</h1>
+         <p>Shoutouts to Mattia, Colin, and Shuaib.</p>
+      <br>
+         <a class="GamesLinkA" href="http://pinhole.me/flashGames/diggy.html">Diggy</a>
+   </body>
+</html>
