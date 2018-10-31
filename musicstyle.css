@@ -7,7 +7,7 @@ background-repeat: no-repeat;
 
 .version-one {
     color: white;
-    font-family: verdana;
+    font-family: helvetica;
     text-align: center;
     font-size: xx-large;
     border: 12px solid black;
@@ -19,19 +19,19 @@ background-repeat: no-repeat;
 
 p {
     color: white;
-    font-family: verdana;
+    font-family: helvetica;
     font-size: 18px;
     
 }
 
 .version-two {
     color: white;
-    font-family: verdana;
+    font-family: helvetica;
     text-align: center;
 }
 
 a { 
-    font-family: verdana;
+    font-family: helvetica;
     font-size: large;
 }
 
@@ -53,7 +53,7 @@ a:active {
 
 h1 { 
     color: white;
-    font-family: verdana;
+    font-family: helvetica;
     font-size: 32px;
 }
 
