@@ -86,3 +86,10 @@ li a:hover {
     color: grey;
 }
 
+#thingDude {
+   
+    position: fixed;
+    left: 960px;
+    width: 300px;
+   
+}
