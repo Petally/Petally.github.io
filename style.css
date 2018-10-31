@@ -50,8 +50,12 @@ a:hover {
 a:active {
     color: slateblue;
 }
+
+.shrineLinkA {
+    font-family: Comic Sans, Comic Sans MS;
+    font-size: xx-small;
+
 #GithubLink {display:block;text-align:center}
-#ShrineLink {display:block;text-align:center}
+#TurtleLink {display:block;text-align:center}
 #MusicLink {display:block;text-align:center}
-#TurtleLink {display:block;text-align:center bottom:0;
-    right:0; font-size: xx-small;}
+#ShrineLink {display:block;bottom:0; right:0;}
