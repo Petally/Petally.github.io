@@ -7,31 +7,31 @@ background-repeat: no-repeat;
 
 .version-one {
     color: white;
-    font-family: verdana;
+    font-family: helvetica;
     text-align: center;
     font-size: xx-large;
     border: 10px solid black;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: rgba(73, 93, 94, 0.5);
 
 }
 
 p {
     color: white;
-    font-family: verdana;
+    font-family: helvetica;
     font-size: 18px;
     
 }
 
 .version-two {
     color: white;
-    font-family: verdana;
+    font-family: helvetica;
     text-align: center;
 }
 
 a { 
-    font-family: verdana;
+    font-family: helvetica;
     font-size: xx-large;
 }
 
