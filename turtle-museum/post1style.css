@@ -11,8 +11,8 @@ body {
     text-align: center;
     font-size: xx-large;
     border: 12px solid black;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 0px;
+    padding: 20px;
     background-color: rgba(73, 93, 94, 0.5);
 
 }
