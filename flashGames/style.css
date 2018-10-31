@@ -1,6 +1,6 @@
 
 body {
-background-image: url('images/background1.png');
+background-image: url('background1.png');
 background-size: cover;
 background-repeat: no-repeat;
 
@@ -51,3 +51,5 @@ a:hover {
 a:active {
     color: slateblue;
 }
+
+#game {margin: 0 auto;}
