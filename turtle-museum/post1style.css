@@ -85,3 +85,8 @@ li a:hover {
     background-color: #39C7F7;
     color: grey;
 }
+
+#thingDude {
+  margin-left: auto;
+  margin-right: auto;
+}
