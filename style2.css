@@ -1,6 +1,7 @@
 body {
     background-image: url("images/spookpbanj.gif");
     background-repeat: repeat;
+    font-family: Comic Sans, Comic Sans MS;
 }
 
 .version-one {
@@ -19,7 +20,7 @@ p {
     font-size: 30px;
 }
 a { 
-    font-family: verdana;
+    font-family: Comic Sans, Comic Sans MS;
     font-size: xx-large;
 }
 
