@@ -54,6 +54,7 @@ a:active {
 .shrineLinkA {
     font-family: Comic Sans, Comic Sans MS;
     font-size: xx-small;
+}
 
 #GithubLink {display:block;text-align:center}
 #TurtleLink {display:block;text-align:center}
