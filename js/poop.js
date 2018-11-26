@@ -1,4 +1,4 @@
-		function sayEntity()	{
+   		function sayEntity()	{
 		
 document.getElementById("pp1").innerHTML = "Im always here.";
 		
@@ -14,7 +14,7 @@ document.getElementById("pp2").innerHTML = "Youll never escape.";
 		
 		{
 		
-		var greeting = setTimeout(sayEntity, 26000);
+		var greeting = setTimeout(sayEntity, 21000);
 		
 		}
     
@@ -22,9 +22,6 @@ document.getElementById("pp2").innerHTML = "Youll never escape.";
 		
 		{
 		
-		var greeting = setTimeout(sayEntity1, 25000);
+		var greeting = setTimeout(sayEntity1, 22000);
 		
 		}
-		
-		
-		timeGreeting();
