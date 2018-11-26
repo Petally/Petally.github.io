@@ -25,5 +25,3 @@ document.getElementById("pp2").innerHTML = "Youll never escape.";
 		var greeting = setTimeout(sayEntity1, 22000);
 		
 		}
-timedEntity();
-timedEntity1();
