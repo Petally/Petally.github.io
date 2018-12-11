@@ -6,9 +6,17 @@ html, body{
     z-index: 1;
 }
 
+.myra1 {
+    text-align: left;
+}
+
+.myra2 {
+    text-align: right;
+}
+
 .LevsLogo {
 display: block;
-text-align: center
+text-align: center;
 }
 
 .version-one {
