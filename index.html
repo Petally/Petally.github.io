@@ -26,194 +26,102 @@
       <div id="GamesLink">
          <a class="GamesLinkA" href="http://pinhole.me/flashGames/flashContents.html">OTHER</a>
       </div>
- <canvas></canvas>
-      <script>(function() {
+<canvas id="canvas"></canvas>
+<script>
+var Canvas = document.getElementById('canvas');
+var ctx = Canvas.getContext('2d');
 
-  var canvas, ctx, circ, nodes, mouse, SENSITIVITY, SIBLINGS_LIMIT, DENSITY, NODES_QTY, ANCHOR_LENGTH, MOUSE_RADIUS;
+var resize = function() {
+    Canvas.width = Canvas.clientWidth;
+    Canvas.height = Canvas.clientHeight;
+};
+window.addEventListener('resize', resize);
+resize();
 
-  // how close next node must be to activate connection (in px)
-  // shorter distance == better connection (line width)
-  SENSITIVITY = 100;
-  // note that siblings limit is not 'accurate' as the node can actually have more connections than this value that's because the node accepts sibling nodes with no regard to their current connections this is acceptable because potential fix would not result in significant visual difference 
-  // more siblings == bigger node
-  SIBLINGS_LIMIT = 10;
-  // default node margin
-  DENSITY = 50;
-  // total number of nodes used (incremented after creation)
-  NODES_QTY = 0;
-  // avoid nodes spreading
-  ANCHOR_LENGTH = 20;
-  // highlight radius
-  MOUSE_RADIUS = 200;
+var elements = [];
+var presets = {};
 
-  circ = 2 * Math.PI;
-  nodes = [];
-
-  canvas = document.querySelector('canvas');
-  resizeWindow();
-  mouse = {
-    x: canvas.width / 2,
-    y: canvas.height / 2
-  };
-  ctx = canvas.getContext('2d');
-  if (!ctx) {
-    alert("Ooops! Your browser does not support canvas :'(");
-  }
-
-  function Node(x, y) {
-    this.anchorX = x;
-    this.anchorY = y;
-    this.x = Math.random() * (x - (x - ANCHOR_LENGTH)) + (x - ANCHOR_LENGTH);
-    this.y = Math.random() * (y - (y - ANCHOR_LENGTH)) + (y - ANCHOR_LENGTH);
-    this.vx = Math.random() * 2 - 1;
-    this.vy = Math.random() * 2 - 1;
-    this.energy = Math.random() * 100;
-    this.radius = Math.random();
-    this.siblings = [];
-    this.brightness = 0;
-  }
-
-  Node.prototype.drawNode = function() {
-    var color = "rgba(255, 0, 0, " + this.brightness + ")";
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, 2 * this.radius + 2 * this.siblings.length / SIBLINGS_LIMIT, 0, circ);
-    ctx.fillStyle = color;
-    ctx.fill();
-  };
-
-  Node.prototype.drawConnections = function() {
-    for (var i = 0; i < this.siblings.length; i++) {
-      var color = "rgba(255, 0, 0, " + this.brightness + ")";
-      ctx.beginPath();
-      ctx.moveTo(this.x, this.y);
-      ctx.lineTo(this.siblings[i].x, this.siblings[i].y);
-      ctx.lineWidth = 1 - calcDistance(this, this.siblings[i]) / SENSITIVITY;
-      ctx.strokeStyle = color;
-      ctx.stroke();
-    }
-  };
-
-  Node.prototype.moveNode = function() {
-    this.energy -= 2;
-    if (this.energy < 1) {
-      this.energy = Math.random() * 100;
-      if (this.x - this.anchorX < -ANCHOR_LENGTH) {
-        this.vx = Math.random() * 2;
-      } else if (this.x - this.anchorX > ANCHOR_LENGTH) {
-        this.vx = Math.random() * -2;
-      } else {
-        this.vx = Math.random() * 4 - 2;
-      }
-      if (this.y - this.anchorY < -ANCHOR_LENGTH) {
-        this.vy = Math.random() * 2;
-      } else if (this.y - this.anchorY > ANCHOR_LENGTH) {
-        this.vy = Math.random() * -2;
-      } else {
-        this.vy = Math.random() * 4 - 2;
-      }
-    }
-    this.x += this.vx * this.energy / 100;
-    this.y += this.vy * this.energy / 100;
-  };
-
-  function initNodes() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    nodes = [];
-    for (var i = DENSITY; i < canvas.width; i += DENSITY) {
-      for (var j = DENSITY; j < canvas.height; j += DENSITY) {
-        nodes.push(new Node(i, j));
-        NODES_QTY++;
-      }
-    }
-  }
-
-  function calcDistance(node1, node2) {
-    return Math.sqrt(Math.pow(node1.x - node2.x, 2) + (Math.pow(node1.y - node2.y, 2)));
-  }
-
-  function findSiblings() {
-    var node1, node2, distance;
-    for (var i = 0; i < NODES_QTY; i++) {
-      node1 = nodes[i];
-      node1.siblings = [];
-      for (var j = 0; j < NODES_QTY; j++) {
-        node2 = nodes[j];
-        if (node1 !== node2) {
-          distance = calcDistance(node1, node2);
-          if (distance < SENSITIVITY) {
-            if (node1.siblings.length < SIBLINGS_LIMIT) {
-              node1.siblings.push(node2);
-            } else {
-              var node_sibling_distance = 0;
-              var max_distance = 0;
-              var s;
-              for (var k = 0; k < SIBLINGS_LIMIT; k++) {
-                node_sibling_distance = calcDistance(node1, node1.siblings[k]);
-                if (node_sibling_distance > max_distance) {
-                  max_distance = node_sibling_distance;
-                  s = k;
-                }
-              }
-              if (distance < max_distance) {
-                node1.siblings.splice(s, 1);
-                node1.siblings.push(node2);
-              }
-            }
-          }
+presets.o = function (x, y, s, dx, dy) {
+    return {
+        x: x,
+        y: y,
+        r: 12 * s,
+        w: 5 * s,
+        dx: dx,
+        dy: dy,
+        draw: function(ctx, t) {
+            this.x += this.dx;
+            this.y += this.dy;
+            
+            ctx.beginPath();
+            ctx.arc(this.x + + Math.sin((50 + x + (t / 10)) / 100) * 3, this.y + + Math.sin((45 + x + (t / 10)) / 100) * 4, this.r, 0, 2 * Math.PI, false);
+            ctx.lineWidth = this.w;
+            ctx.strokeStyle = '#fff';
+            ctx.stroke();
         }
-      }
     }
-  }
+};
 
-  function redrawScene() {
-    resizeWindow();
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    findSiblings();
-    var i, node, distance;
-    for (i = 0; i < NODES_QTY; i++) {
-      node = nodes[i];
-      distance = calcDistance({
-        x: mouse.x,
-        y: mouse.y
-      }, node);
-      if (distance < MOUSE_RADIUS) {
-        node.brightness = 1 - distance / MOUSE_RADIUS;
-      } else {
-        node.brightness = 0;
-      }
+presets.x = function (x, y, s, dx, dy, dr, r) {
+    r = r || 0;
+    return {
+        x: x,
+        y: y,
+        s: 20 * s,
+        w: 5 * s,
+        r: r,
+        dx: dx,
+        dy: dy,
+        dr: dr,
+        draw: function(ctx, t) {
+            this.x += this.dx;
+            this.y += this.dy;
+            this.r += this.dr;
+            
+            var _this = this;
+            var line = function(x, y, tx, ty, c, o) {
+                o = o || 0;
+                ctx.beginPath();
+                ctx.moveTo(-o + ((_this.s / 2) * x), o + ((_this.s / 2) * y));
+                ctx.lineTo(-o + ((_this.s / 2) * tx), o + ((_this.s / 2) * ty));
+                ctx.lineWidth = _this.w;
+                ctx.strokeStyle = c;
+                ctx.stroke();
+            };
+            
+            ctx.save();
+            
+            ctx.translate(this.x + Math.sin((x + (t / 10)) / 100) * 5, this.y + Math.sin((10 + x + (t / 10)) / 100) * 2);
+            ctx.rotate(this.r * Math.PI / 180);
+            
+            line(-1, -1, 1, 1, '#fff');
+            line(1, -1, -1, 1, '#fff');
+            
+            ctx.restore();
+        }
     }
-    for (i = 0; i < NODES_QTY; i++) {
-      node = nodes[i];
-      if (node.brightness) {
-        node.drawNode();
-        node.drawConnections();
-      }
-      node.moveNode();
+};
+
+for(var x = 0; x < Canvas.width; x++) {
+    for(var y = 0; y < Canvas.height; y++) {
+        if(Math.round(Math.random() * 8000) == 1) {
+            var s = ((Math.random() * 5) + 1) / 10;
+            if(Math.round(Math.random()) == 1)
+                elements.push(presets.o(x, y, s, 0, 0));
+            else
+                elements.push(presets.x(x, y, s, 0, 0, ((Math.random() * 3) - 1) / 10, (Math.random() * 360)));
+        }
     }
-    requestAnimationFrame(redrawScene);
-  }
+}
 
-  function initHandlers() {
-    document.addEventListener('resize', resizeWindow, false);
-    canvas.addEventListener('mousemove', mousemoveHandler, false);
-  }
+setInterval(function() {
+    ctx.clearRect(0, 0, Canvas.width, Canvas.height);
 
-  function resizeWindow() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  }
-
-  function mousemoveHandler(e) {
-    mouse.x = e.clientX;
-    mouse.y = e.clientY;
-  }
-
-  initHandlers();
-  initNodes();
-  redrawScene();
-
-})();
-      </script>
+    var time = new Date().getTime();
+    for (var e in elements)
+		elements[e].draw(ctx, time);
+}, 10);
+</script>
 
 </body>
 </html>
