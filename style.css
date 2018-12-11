@@ -6,6 +6,11 @@ html, body{
     z-index: 1;
 }
 
+.LevsLogo {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
 
 .version-one {
     color: white;
