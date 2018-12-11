@@ -6,10 +6,9 @@ html, body{
     z-index: 1;
 }
 
-#LevsLogo {
+.LevsLogo {
 display: block;
-margin-left: auto;
-margin-right: auto;
+text-align: center
 }
 
 .version-one {
