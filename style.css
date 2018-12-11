@@ -6,15 +6,8 @@ html, body{
     z-index: 1;
 }
 
-.myra1 {
-    text-align: left;
-}
 
-.myra2 {
-    text-align: right;
-}
-
-.LevsLogo {
+#LevsLogo {
 display: block;
 text-align: center;
 }
