@@ -3,7 +3,7 @@ background-color: SlateBlue;
 font-family: Letter Gothic Std;
 }
 
-#imgblue {
+.imgblue {
          display:block;
         margin-left: auto;
         margin-right: auto; 
