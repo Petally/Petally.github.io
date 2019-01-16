@@ -12,6 +12,7 @@ text-align: center;
 }
 
 #gameLinks {
+    text-decoration-line: underline purple;
       background: -webkit-linear-gradient(#0099ff, #ffff66);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
