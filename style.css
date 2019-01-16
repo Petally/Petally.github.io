@@ -2,16 +2,19 @@ html {
   text-align: center;
 background-color: #584fce;
 font-family: Letter Gothic Std;
-    background: -webkit-linear-gradient(#0099ff, #ffff66);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .imgblue {
+      background: -webkit-linear-gradient(#0099ff, #ffff66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 text-align: center;
 }
 
 #gameLinks {text-decoration: none; 
+      background: -webkit-linear-gradient(#0099ff, #ffff66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   word-spacing: 10px; 
     font-size: 30px
 }
