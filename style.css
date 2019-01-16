@@ -11,7 +11,7 @@ font-family: Letter Gothic Std;
 text-align: center;
 }
 
-#gameLinks {text-decoration: none; 
+#gameLinks {
       background: -webkit-linear-gradient(#0099ff, #ffff66);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
