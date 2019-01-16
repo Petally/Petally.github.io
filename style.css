@@ -1,8 +1,15 @@
 html { 
-background-color: SlateBlue;
+background-color: SkyBlue;
 font-family: Letter Gothic Std;
 }
 
 .imgblue {
 text-align: center;
+}
+
+#gameLinks {text-decoration: none; 
+  word-spacing: 10px; 
+  background: -webkit-linear-gradient(#0099ff, #ffff66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
