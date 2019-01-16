@@ -1,6 +1,10 @@
 html { 
-background-color: #aaabed;
+  text-align: center;
+background-color: #584fce;
 font-family: Letter Gothic Std;
+    background: -webkit-linear-gradient(#0099ff, #ffff66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .imgblue {
@@ -9,7 +13,5 @@ text-align: center;
 
 #gameLinks {text-decoration: none; 
   word-spacing: 10px; 
-  background: -webkit-linear-gradient(#0099ff, #ffff66);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    font-size: 30px
 }
