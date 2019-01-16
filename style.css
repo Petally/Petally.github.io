@@ -5,16 +5,11 @@ font-family: Letter Gothic Std;
 }
 
 .imgblue {
-      background: -webkit-linear-gradient(#0099ff, #ffff66);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 text-align: center;
 }
 
 #gameLinks {
-      background: -webkit-linear-gradient(#0099ff, #ffff66);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+color: 909fdc;
   word-spacing: 10px; 
     font-size: 30px
 }
