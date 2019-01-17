@@ -14,6 +14,6 @@ color: black;
     font-size: 30px
 }
 
-#discusThing { 
-width = "720px"  
+#disqus_thread { 
+width = 720px 
 }
