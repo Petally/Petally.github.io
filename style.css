@@ -9,8 +9,10 @@ text-align: center;
 }
 
 #gameLinks {
-color: black;
   word-spacing: 10px; 
     font-size: 30px
 }
 
+a {
+  color: black;
+}
