@@ -1,12 +1,10 @@
 html { 
   text-align: center;
 background-color: #584fce;
-font-family: OCR A Std, monospace;
+font-family: 'Roboto', sans-serif;
 }
 
-.imgblue {
-text-align: center;
-}
+
 
 #gameLinks {
   word-spacing: 10px; 
@@ -16,3 +14,5 @@ text-align: center;
 a {
   color: black;
 }
+
+#name { font-size: 33px }
