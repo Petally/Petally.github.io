@@ -5,8 +5,8 @@ html {
 }
 
 body {
+    background: url("bg.gif");
   background-color: #584fce; 
-  background: url("bg.gif");
   background-size: cover;
   
 }
