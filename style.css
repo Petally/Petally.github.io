@@ -8,11 +8,11 @@ font-family: 'Roboto', sans-serif;
 
 #gameLinks {
   word-spacing: 10px; 
-    font-size: 30px
+    font-size: 20px
 }
 
 a {
   color: black;
 }
 
-#name { font-size: 33px }
+.name { font-size: 333px }
