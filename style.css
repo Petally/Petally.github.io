@@ -1,10 +1,15 @@
 html { 
   text-align: center;
-background-color: #584fce;
-font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
-
+body {
+  background-color: #584fce; 
+  background: url("bg.gif");
+  background-size: cover;
+  
+}
 
 #gameLinks {
   word-spacing: 10px; 
