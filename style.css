@@ -7,9 +7,7 @@ html {
 body {
     background: url("https://pinhole.me/bg.gif");
   background-color: #584fce; 
-  background-size: cover;
-  
-  
+  background-size: cover;  
 }
 
 #gameLinks {
@@ -18,7 +16,7 @@ body {
 }
 
 a {
-  color: black;
+  color: white;
 }
 
 .name { font-size: 100px }
