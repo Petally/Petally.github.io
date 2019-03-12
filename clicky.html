@@ -1,28 +1,27 @@
-<!DOCTYPE html>
+!DOCTYPE html
 <html>
-   <head>   
+	<head>   
       <title>	
       PETALLY
       </title>      
-      <meta name="description" content="Petally" 
-      <meta name="author" content="Petally">
-	         <link rel="stylesheet" href="https://pinhole.me/clicky.css"></link>
+      <meta name="description" content="Petally" <meta="">
+	         <link rel="stylesheet" href="https://pinhole.me/clicky.css">
 	<link rel="icon" href="https://pinhole.me/blue.png">
    </head>
    <body>
-	   <p id="numOfClicks">Clicks: 0</p>
+	   <p id="numOfClicks">Clicks: </p>
      <button id="clicker" onclick="clickClick()">Click!</button>
 	   
-	   <script type="text/javascript"> 
-       function setup() {
-	     var Clicks = 0;
-	     var clickingPower = 1;   
-	   }
-	   	 function clickClick() {
+	   <script type="text/javascript">	     var Clicks = 0;
+	     var clickingPower = 1;
+
+	   	 function clickClick() { 
         Clicks = Clicks + clickingPower; 
         document.getElementById('numOfClicks').innerHTML = "Clicks: " + Clicks;
        }
 		   
 	   </script>
 
-</br></br></br>
+<br><br><br>
+
+</body></html>
