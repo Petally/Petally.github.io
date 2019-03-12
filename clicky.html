@@ -10,9 +10,19 @@
 	<link rel="icon" href="https://pinhole.me/blue.png">
    </head>
    <body>
-   <script> var clicks = 0; </script>
-	   <div class="name">Clicky</div><br>
-     <button style="text-align: center;" onclick="clicks = clicks + clickingPower; document.getElementById('numberClicks').src='"Clicks: " + clicks;"> Click! </button>
-     <p id="numberClicks"> Clicks: 0 </p>
+	   <p id="numOfClicks">Clicks: 0</p>
+     <button id="clicker" onclick="clickClick()">Click!</button>
+	   
+	   <script type="text/javascript"> 
+       function setup() {
+	     var Clicks = 0;
+	     var clickingPower = 1;   
+	   }
+	   	 function clickClick() {
+        Clicks = Clicks + clickingPower; 
+        document.getElementById('numOfClicks').innerHTML = "Clicks: " + Clicks;
+       }
+		   
+	   </script>
 
 </br></br></br>
