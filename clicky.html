@@ -9,15 +9,32 @@
 	<link rel="icon" href="https://pinhole.me/blue.png">
    </head>
    <body>
-	   <p id="numOfClicks">Clicks: </p>
+	   <p id="numOfClicks">Clicks: 0</p>
+     <p id="clickingPower">Clicking Power: 1</p>
      <button id="clicker" onclick="clickClick()">Click!</button>
+     <button id="clickerUpgrade" onclick="upgrade1Click">Buy a Clicky!</button>
 	   
-	   <script type="text/javascript">	     var Clicks = 0;
+	   <script type="text/javascript">	     
+       var Clicks = 0;
 	     var clickingPower = 1;
-
+       var upgradeCost1 = 100;
+       var costAdder1 = 100;
+       var upgradePower1 = 1;
+       
+       
 	   	 function clickClick() { 
         Clicks = Clicks + clickingPower; 
         document.getElementById('numOfClicks').innerHTML = "Clicks: " + Clicks;
+       }
+		   
+		 function upgrade1Click() { 
+        if (Clicks > upgradeCost) then {
+          Clicks = Clicks - upgradeCost1;
+          upgradeCost1 = upgradeCost1 + costAdder1;
+          clickingPower = clickingPower + upgradePower1;
+          document.getElementById('numOfClicks').innerHTML = "Clicks: " + Clicks;
+          document.getElementById('clickingPower').innerHTML = "Clicking Power: " + clickingPower;
+        }
        }
 		   
 	   </script>
