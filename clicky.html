@@ -12,7 +12,7 @@
 	   <p id="numOfClicks">Clicks: 0</p>
      <p id="clickingPower">Clicking Power: 1</p>
      <button id="clicker" onclick="clickClick()">Click!</button>
-     <button id="clickerUpgrade" onclick="upgrade1Click">Buy a Clicky!</button>
+     <button id="clickerUpgrade" onclick="upgrade1Click()">Buy a Clicky!</button>
 	   
 	   <script type="text/javascript">	     
        var Clicks = 0;
@@ -28,7 +28,7 @@
        }
 		   
 		 function upgrade1Click() { 
-        if (Clicks > upgradeCost) then {
+        if (Clicks > upgradeCost1 - 1) {
           Clicks = Clicks - upgradeCost1;
           upgradeCost1 = upgradeCost1 + costAdder1;
           clickingPower = clickingPower + upgradePower1;
