@@ -1,4 +1,4 @@
-.clicker {
+#clicker {
  background: #FFFFFF;
  background-image: url("https://i.imgur.com/Ac7QUxZ.png");
  background-size: cover;
@@ -10,7 +10,7 @@
  cursor: pointer;
 }
 
-.clicker:hover
+#clicker:hover
 {
  width: 125px;
  height: 75px;
