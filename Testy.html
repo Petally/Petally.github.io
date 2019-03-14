@@ -1,0 +1,39 @@
+<html>
+	<head>   
+      <title>	
+      PETALLY
+      </title>      
+      <meta name="description" content="Petally" <meta="">
+	         <link rel="stylesheet" href="https://pinhole.me/clicky.css">
+	<link rel="icon" href="https://pinhole.me/blue.png">
+   </head>
+   <body>
+	   <canvas id="myCanvas" width="1080" height="720" style="border:10px solid #000000;">
+</canvas>
+	   <script type="text/javascript">	     
+      var PlayerX = 0;
+      var PlayerY = 0;
+      var FallSpeed = 50;
+      
+      var c = document.getElementById("myCanvas");
+       var ctx = c.getContext("2d");
+	   </script>
+
+for (;;) {
+ if (PlayerY < 720) {
+ FallSpeed = FallSpeed + 2;
+ PlayerY = PlayerY + FallSpeed;
+ 
+ if (PlayerY > 720) {
+ PlayerY = 0;
+ }
+ ctx.fillStyle = "#FF0000";
+ ctx.fillRect(PlayerX,PlayerY,150,75);
+
+ const context = canvas.getContext('2d');
+ context.clearRect(0, 0, canvas.width, canvas.height);
+ }
+}
+
+
+</body></html>
