@@ -1,3 +1,22 @@
+#clickerUpgrade {
+ background: #FFFFFF;
+ background-size: cover;
+  background-position: center;
+ display: inline-block;
+
+ width: 200px;
+ height: 50px;
+ transition: all 0.7s;
+ cursor: pointer;
+border: none;
+vertical-align: middle;
+}
+
+#clickerUpgrade:hover {
+ width: 202px;
+ height: 52px;
+}
+
 #clicker {
  background: #FFFFFF;
  background-image: url("https://i.imgur.com/Ac7QUxZ.png");
@@ -17,24 +36,3 @@ vertical-align: middle;
  width: 105px;
  height: 55px;
 }
-
-#clickerUpgrade {
- background: #FFFFFF;
- background-image: url("https://i.imgur.com/8U2MHah.png");
- background-size: cover;
-  background-position: center;
- display: inline-block;
-  padding: 20px;
- width: 200px;
- height: 50px;
- transition: all 0.7s;
- cursor: pointer;
-border: none;
-vertical-align: middle;
-}
-
-#clickerUpgrade:hover {
- width: 205px;
- height: 55px;
-}
-
