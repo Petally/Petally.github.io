@@ -7,7 +7,7 @@
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Year', 'Growth in Ft'],
+          ['Year', 'Growth'],
           ['2003', 2],
           ['2004', 3],
           ['2005', 5],
@@ -19,6 +19,18 @@
           title: 'Tree Growth',
           curveType: 'function',
           legend: { position: 'bottom' }
+          
+                  series: {
+          // Gives each series an axis name that matches the Y-axis below.
+          0: {axis: 'Mesurement'},
+        },
+        axes: {
+          // Adds labels to each axis; they don't have to match the axis names.
+          y: {
+            Mesurement: {label: 'Growth in Feet'},
+          }
+        }
+      
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
