@@ -8,19 +8,22 @@
       <meta name="author" content="Petally">
 	         <link rel="stylesheet" href="https://petally.github.io/style.css"></link>
 	<link rel="icon" href="https://cdn.discordapp.com/attachments/344625244419653632/562353882806616065/slemicon.png">
+	    <script>
+        var videos = ["https://www.youtube-nocookie.com/embed/L_hFw_cWg9U", "https://www.youtube.com/embed/B_kvXWBLUvI", "https://www.youtube.com/embed/DZRfZd4wByc"];
+        window.onload = function () {
+            var playerDiv = document.getElementById("random_player");
+            var player = document.createElement("IFRAME");
+            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+            player.setAttribute('width', '640');
+            player.setAttribute('height', '390');
+            player.setAttribute('src', randomVideoUrl);
+            playerDiv.appendChild(player);
+        };
+    </script>
    </head>
    <body>
    <h1> Petally </h1>
 	   <br>
-	   <div id="video">
-<iframe width="1012" 
-	height="630" 
-	src="https://www.youtube-nocookie.com/embed/L_hFw_cWg9U" 
-	frameborder="0"
-	allow="accelerometer; autoplay; encrypted-media;
-	       gyroscope; picture-in-picture"
-	allowfullscreen>
-		   </iframe>
-
+	   <div id="random_player"> 
 	   </div>
 	   <p> Praise. </p>
