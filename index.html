@@ -12,10 +12,10 @@
         var videos = ["https://www.youtube-nocookie.com/embed/L_hFw_cWg9U", "https://www.youtube.com/embed/B_kvXWBLUvI", "https://www.youtube.com/embed/DZRfZd4wByc"];
         window.onload = function () {
             var playerDiv = document.getElementById("random_player");
-            var player = document.createElement("IFRAME");
+            var player = document.createElement("iframe");
             var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
-            player.setAttribute('width', '640');
-            player.setAttribute('height', '390');
+            player.setAttribute('width', '1120');
+            player.setAttribute('height', '630');
             player.setAttribute('src', randomVideoUrl);
             playerDiv.appendChild(player);
         };
