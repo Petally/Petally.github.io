@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+   <head>   
+      <title>	
+      Petally
+      </title>      
+      <meta name="description" content="Petally" 
+      <meta name="author" content="Petally">
+	         <link rel="stylesheet" href="https://petally.github.io/style.css"></link>
+	<link rel="icon" href="https://cdn.discordapp.com/attachments/344625244419653632/562353882806616065/slemicon.png">
+	    <script>
+        var videos = ["https://www.youtube-nocookie.com/embed/L_hFw_cWg9U",
+		      "https://www.youtube.com/embed/B_kvXWBLUvI",
+		      "https://www.youtube.com/embed/DZRfZd4wByc",
+		     "https://www.youtube.com/embed/z2IrJ0DB0Xg",
+		     "https://www.youtube.com/embed/MFmr_TZLpS0",
+		     "https://www.youtube.com/embed/sYfmQ5eAQlg",
+		     "https://www.youtube.com/embed/1i5bnbkRGMQ"];
+        window.onload = function () {
+            var playerDiv = document.getElementById("random_player");
+            var player = document.createElement("object");
+            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+            player.setAttribute('width', '1120');
+            player.setAttribute('height', '630');
+            player.setAttribute('src', randomVideoUrl);
+            player.setAttribute('type', "application/x-shockwave-flash");
+            playerDiv.appendChild(player);
+        };
+    </script>
+   </head>
+   <body>
+   <h1> Petally </h1>
+	   <br>
+	   <div id="random_player"> 
+	   </div>
+	   <p> Praise. </p>
