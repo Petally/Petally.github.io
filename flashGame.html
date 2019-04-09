@@ -10,22 +10,25 @@
 	         <link rel="stylesheet" href="https://petally.github.io/style.css"></link>
 	<link rel="icon" href="https://cdn.discordapp.com/attachments/344625244419653632/562353882806616065/slemicon.png">
 	    <script>
-        var videos = ["https://www.youtube-nocookie.com/embed/L_hFw_cWg9U",
-		      "https://www.youtube.com/embed/B_kvXWBLUvI",
-		      "https://www.youtube.com/embed/DZRfZd4wByc",
-		     "https://www.youtube.com/embed/z2IrJ0DB0Xg",
-		     "https://www.youtube.com/embed/MFmr_TZLpS0",
-		     "https://www.youtube.com/embed/sYfmQ5eAQlg",
-		     "https://www.youtube.com/embed/1i5bnbkRGMQ"];
+        var videos = ["https://www.coolmath-games.com/sites/cmatgame/files/games/redball4v1_cmg-Events.swf",
+		      "https://www.coolmath-games.com/sites/cmatgame/files/games/breeze_v2.0_for_coolmath_2.swf"];
         window.onload = function () {
             var playerDiv = document.getElementById("random_player");
             var player = document.createElement("object");
             var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
             player.setAttribute('width', '1120');
             player.setAttribute('height', '630');
-            player.setAttribute('src', randomVideoUrl);
+            player.setAttribute('data', randomVideoUrl);
             player.setAttribute('type', "application/x-shockwave-flash");
             playerDiv.appendChild(player);
+	    var param1boi = document.createElement("param");
+            param1boi.setAttribute('name', 'movie');
+	    param1boi.setAttribut('value', 'randomVideoUrl')
+	    playerDiv.appendChild(param1boi);
+	    var param2boi = document.createElement("param");
+	    param2boi.setAttribute('name', 'quality');
+	    param2boi.setAttribute('value', 'high');
+	    playerDiv.appendChild(param2boi);
         };
     </script>
    </head>
