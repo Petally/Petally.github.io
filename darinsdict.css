@@ -1,16 +1,15 @@
 html {	
-font-family: "Roboto, Arial, Verdana";	
+font-family: "Arial";	
 }	
-
-#body1 {
- background-color: #e6e6e6;
-}
 
  #header1 {	
 text-align: center;	
 }	   
 
-       
+header {
+ background-color: #e6e6e6;
+}
+
 p {	      
 margin: 100px;	           
 }
