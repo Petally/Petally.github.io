@@ -2,6 +2,9 @@ html {
 font-family: "Roboto, Arial, Verdana";	
 }	
 
+#body1 {
+ background-color: #e6e6e6;
+}
 
  #header1 {	
 text-align: center;	
@@ -9,5 +12,5 @@ text-align: center;
 
        
 p {	      
-margin: 100;	           
+margin: 100px;	           
 }
