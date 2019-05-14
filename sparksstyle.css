@@ -4,6 +4,7 @@ background-attachment: fixed;
 background-repeat: repeat;
 overflow-wrap: break-word;
   font-family: 'Open Sans', sans-serif;
+  color: white;
 }
 
 ::-webkit-scrollbar { 
