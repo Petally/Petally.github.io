@@ -1,0 +1,30 @@
+body {
+background-image: url("https://i.imgur.com/s6U3iFP.png");
+background-attachment: fixed;
+background-repeat: repeat;
+overflow-wrap: break-word;
+font-family; "Arial";
+}
+
+
+
+.scrollthing {
+width: 800px;
+padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: (0 , 0 , 0, 0.3);
+}
+
+h1 {
+text-align: center;
+font-size: 50px;
+}
+
+h2 {
+font-size: 36px;
+}
+
+p {
+font-size: 24px;
+}
