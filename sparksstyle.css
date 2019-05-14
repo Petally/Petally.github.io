@@ -6,7 +6,9 @@ overflow-wrap: break-word;
   font-family: 'Open Sans', sans-serif;
 }
 
-
+::-webkit-scrollbar { 
+    display: none; 
+}
 
 #scrollthing {
 width: 800px;
