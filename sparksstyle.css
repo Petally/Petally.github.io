@@ -22,16 +22,18 @@ padding: 20px;
 h1 {
 text-align: center;
 font-size: 50px;
+      transition: color 2s;
+  transform-style: preserve-3d;
+}
+
+h1:hover {
+ color: forestGreen; 
 }
 
 h2 {
 font-size: 36px;
-      transition: font-size 2s;
 }
 
-h2:hover {
-  font-size: 50px;
-}
 
 p {
 font-size: 24px;
