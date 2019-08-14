@@ -1,7 +1,7 @@
 html {
 font-family: "Comic Sans MS";
   color: Red;
-  background: "images/spookpbanj.gif"
+  background: url("images/spookpbanj.gif");
 
 }
 
