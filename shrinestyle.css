@@ -1,8 +1,10 @@
 html {
 font-family: "Comic Sans MS";
   color: grey;
-  background-image: url("https://petally.github.io/images/pbanjsacrifice.png");
 
+}
+body {
+  background-image: url("https://petally.github.io/images/pbanjsacrifice.png");
 }
 
 h1 {
