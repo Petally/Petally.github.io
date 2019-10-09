@@ -37,12 +37,11 @@ body::after {
       -moz-box-shadow: inset -12px 0px 50px 50px #000; 
       -webkit-box-shadow: inset -12px 0px 50px 50px #000; 
       box-shadow: inset -500px -100px 400px 25px rgba(0,0,0,0.25); 
-    whitespace:pre;
 }
 #terminal, a, p {
     font-family: 'IBM Plex Mono', monospace;
     line-height:50px;
-    font-size:50px;
+    font-size:x-large;
     mix-blend-mode: difference;
     opacity:0.75;
     color:transparent;
