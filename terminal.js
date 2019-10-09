@@ -30,7 +30,7 @@ function onkeydown(event) {
 }
 
 async function main() {
-	fetch('text.txt')
+	fetch('welcome.txt')
   		.then(response => response.text())
   		.then(text => msg = text)
 
