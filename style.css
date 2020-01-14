@@ -1,0 +1,9 @@
+@font-face {
+font-family: bigBlue;
+src: url(BigBlue_TerminalPlus.TFF);
+}
+
+html {
+font-family: bigBlue;
+font-size: large;
+}
