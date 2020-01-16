@@ -6,4 +6,6 @@ src: url(Petally.github.io/BigBlue_TerminalPlus.TTF);
 html {
 font-family: 'bigBlue';
 font-size: large;
+color: white;
+background-color: black;
 }
