@@ -1,9 +1,9 @@
 @font-face {
-font-family: bigBlue;
-src: url(BigBlue_TerminalPlus.TFF);
+font-family: 'bigBlue';
+src: url(http://petally.github.io/BigBlue_TerminalPlus.TFF);
 }
 
 html {
-font-family: bigBlue;
+font-family: 'bigBlue';
 font-size: large;
 }
