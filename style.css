@@ -31,3 +31,6 @@ margin-block-start: 2em;
 a {
 text-decoration: none;
 }
+embed {
+margin: 0 auto;
+}
