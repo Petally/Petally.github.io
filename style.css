@@ -20,4 +20,5 @@ width: 100%;
 background-color: #343434;
 padding: 5%;
 overflow: hidden;
+position: sticky;
 }
