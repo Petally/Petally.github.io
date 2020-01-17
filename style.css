@@ -3,9 +3,9 @@
 	font-style: normal;
 	font-weight: 400;
 	src: local('BigBlue Terminal'),
-		url('font/BigBlue_TerminalPlus.TTF') format('truetype'),
-		url('font/BigBlue_TerminalPlus.woff') format('woff'),
-		url('font/BigBlue_TerminalPlus.woff2') format('woff2');
+		url('BigBlue_TerminalPlus.TTF') format('truetype'),
+		url('BigBlue_TerminalPlus.woff') format('woff'),
+		url('BigBlue_TerminalPlus.woff2') format('woff2');
 }
 
 html {
